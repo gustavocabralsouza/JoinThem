@@ -51,41 +51,14 @@ a {
 }
 
 .container{
-    height: 100vh;
-    max-width: 992px;
+    max-width: 100%;
     margin: 0 auto;
-    padding : 2.5rem 2rem;
-
     display: flex;
-    flex-direction: column;
+    background-color: var(--blue);
+    height: 75px;
+}
+.container h1{
+    font-size: 20px;
 }
 
-.experience-bar{
-    display: flex;
-    align-items: center;
 
-}
-.experience-bar span{
-    font-size: 1rem;
-
-}
-/* O sinal ">" pega somente a div que tem .experience-bar */
-.experience-bar > div{
-   flex:1;
-   height: 4px;
-   border-radius: 4px;
-   background: var(--gray-line);
-   margin: 0 1.5rem;
-   position: relative;
-}
-.experience-bar > div > div{
-    height: 4px;
-    border-radius: 4px;
-    background: var(--green);
-    
- }
- span.current-experience{
-     position: absolute;
-     top : 12px;
-     transform: translateX(-5);
- }
